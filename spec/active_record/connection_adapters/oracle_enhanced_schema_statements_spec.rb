@@ -598,8 +598,8 @@ end
     context "with table_name_suffix" do
       let(:table_name_suffix) { '_xxx' }
 
-      it "should use table_name_prefix for foreign table" do
         schema_define do
+      it "should use table_name_suffix for foreign table" do
           add_foreign_key :test_comments, :test_posts
         end
 
